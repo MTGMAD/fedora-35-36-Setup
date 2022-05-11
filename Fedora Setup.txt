@@ -1,0 +1,105 @@
+Speed up dnf:
+sudo nano /etc/dnf/dnf.conf
+fastestmirror=True
+max_parallel_downloads=10
+defaultyes=True
+====================================================================================
+
+Adding RPM's:
+https://docs.fedoraproject.org/en-US/quick-docs/setup_rpmfusion/
+
+sudo dnf install \
+  https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+  
+sudo dnf install \
+  https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+==================================================================================== 
+
+Adding Media addons
+https://docs.fedoraproject.org/en-US/quick-docs/assembly_installing-plugins-for-playing-movies-and-music/
+=====================================================================================
+
+Adding Flatpak:
+https://flatpak.org/setup/Fedora
+======================================================================================
+
+Installing PIA:
+https://www.privateinternetaccess.com/download/linux-vpn
+
+CD Dowloads
+ sh pia-linux-3.3.1-06924.run (Will be a different version number) 
+ =====================================================================================
+ 
+ Gnome Extensions:
+ 
+ Indicators icon in tray:
+ https://extensions.gnome.org/extension/615/appindicator-support/
+ 
+ ArcMenu
+ https://extensions.gnome.org/extension/3628/arcmenu/
+ 
+ Caffeine
+ https://extensions.gnome.org/extension/517/caffeine/
+ 
+ Dash to Dock
+ https://extensions.gnome.org/extension/307/dash-to-dock/
+ 
+ Extension List
+ https://extensions.gnome.org/extension/3088/extension-list/
+ 
+ Screenshot Tool
+ https://extensions.gnome.org/extension/1112/screenshot-tool/
+ 
+ Media Controls
+ https://extensions.gnome.org/extension/4470/media-controls/
+ 
+ Open Weather
+ https://extensions.gnome.org/extension/750/openweather/
+ 
+ Sound Input & Output Device Chooser
+ https://extensions.gnome.org/extension/906/sound-output-device-chooser/
+ 
+ User Themes
+ https://extensions.gnome.org/extension/19/user-themes/
+ 
+ Application Volume Mixer
+ https://extensions.gnome.org/extension/3499/application-volume-mixer/
+======================================================================================
+
+CDROM MOUNT:
+https://linuxconfig.org/how-to-mount-cdrom-in-linux
+
+blkid
+sudo mkdir /mnt/cdrom
+sudo mount /dev/sr0 /mnt/cdrom
+cd /mnt/cdrom
+
+======================================================================================
+
+VIRTUAL MACHINE ONLY USING VBOX
+
+Running Vbox Addons:
+sudo sh ./VBoxLinuxAdditions.run
+
+======================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
