@@ -6,17 +6,17 @@ defaultyes=True
 ====================================================================================
 
 Adding RPM's:
-https://docs.fedoraproject.org/en-US/quick-docs/setup_rpmfusion/
+https://rpmfusion.org/Configuration
 
-sudo dnf install \
-  https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-  
-sudo dnf install \
-  https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+sudo dnf groupupdate core
+
 ==================================================================================== 
 
-Adding Media addons
-https://docs.fedoraproject.org/en-US/quick-docs/assembly_installing-plugins-for-playing-movies-and-music/
+Adding Media addons:
+sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+sudo dnf groupupdate sound-and-video
 =====================================================================================
 
 Adding Flatpak:
@@ -82,6 +82,27 @@ Running Vbox Addons:
 sudo sh ./VBoxLinuxAdditions.run
 
 ======================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
