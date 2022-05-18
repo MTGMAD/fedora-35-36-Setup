@@ -85,7 +85,7 @@ sudo sh ./VBoxLinuxAdditions.run
 GNOME BOXES:
 #making copy paste work between Boxes adn Host OS:
 sudo dnf install spice-vdagent spice-webdavd
-
+=======================================================================================
 
 
 
