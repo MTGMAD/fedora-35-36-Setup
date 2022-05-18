@@ -77,11 +77,16 @@ cd /mnt/cdrom
 ======================================================================================
 
 VIRTUAL MACHINE ONLY USING VBOX
-
-Running Vbox Addons:
+#Running Vbox Addons:
 sudo sh ./VBoxLinuxAdditions.run
 
 ======================================================================================
+
+GNOME BOXES:
+#making copy paste work between Boxes adn Host OS:
+sudo dnf install spice-vdagent spice-webdavd
+
+
 
 
 
