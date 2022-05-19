@@ -18,3 +18,8 @@ sudo dnf groupupdate sound-and-video -y
 
 sudo dnf update -y
 
+echo "FILE APPENDING COMPLETE"
+echo "neofetch">> /home/linux73/.bashrc
+cat /home/linux73/.bashrc
+echo "SCRIPT COMPLETE"
+
