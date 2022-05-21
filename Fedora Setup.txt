@@ -87,6 +87,11 @@ GNOME BOXES:
 sudo dnf install spice-vdagent spice-webdavd
 =======================================================================================
 
+Filebot (SNAP) access to media folder:
+https://www.filebot.net/forums/viewtopic.php?f=11&t=5139
+ 
+sudo snap connect filebot:removable-media
+=======================================================================================
 
 
 
